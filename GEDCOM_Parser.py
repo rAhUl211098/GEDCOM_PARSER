@@ -153,3 +153,146 @@ class ClassForFam :
 
         #print(self.date_of_wedding ,self.date_of_divorce , self.wife , self.husband , self.fam_id)
         return ""
+
+# Parser to process GEDCOM data
+class GedcomParser (  ClassForFam, ClassForInd ):
+
+    # tags to be excempted and handled differently
+    exp_list = [ 'FAM' , 'INDI' ]
+
+    # dictionary of tags
+    dict_true = { '0' : [ 'INDI' , 'FAM' , 'HEAD' , 'TRLR' , 'NOTE' ] ,
+                  '1' : [ 'NAME' , 'SEX' , 'BIRT' , 'DEAT' , 'FAMC' , 'FAMS' , 'MARR' , 'HUSB' , 'WIFE' , 'CHIL' ,
+                          'DIV' ] ,
+                  '2' : [ 'DATE' ] }
+
+    getDate = datetime.datetime.today ( )
+    dateFormatter = "%Y-%m-%d"
+
+
+    # Initializing class
+    def __init__ ( self , path , pt = False , write = False ) :
+        self.path = path
+        self.individuals = dict ( )
+        self.families = dict ( )
+        self.original_data = [ ]
+        self.loggerComment = [ ]
+        self.logError = [ ]
+        self.invalid_tags = [ ]
+        self.updated_file = [ ]
+
+        if not os.path.exists ( self.path ) :
+            raise FileNotFoundError
+
+        try :
+            filePath = open ( self.path , 'r' )
+
+        except FileNotFoundError :
+            print ( "Could not open:" )   #error handling for filenotfound
+
+        else :
+            with filePath :
+                for index , line in enumerate ( filePath ) :
+                    line = line.strip ( '\n' )
+                    splitInLine = line.split ( ' ' , 2 )
+                    # splitting the line to check tag validity
+
+                    splitInLine = self.verify_excp_tag_validity ( splitInLine )
+                    self.verify_tag_validity ( index , splitInLine )
+
+        self.process_info ( )
+
+
+        # Adding individual data
+        individualRows = [ indi.ptbl_row ( ) for indi in self.individuals.values ( ) ]
+        individualTable = self.print_in_table ( ClassForInd.columns , individualRows )
+
+        # Adding family data
+        familyRows = [ ]
+        #print(self.families.values ( ))
+        for fam in self.families.values ( ) :
+            if fam.husband :
+                husbandId = fam.husband
+
+            if fam.wife :
+                wifeId = fam.wife
+
+
+            for individual in self.individuals.values ( ) :
+                if husbandId == individual.indi_id :
+                    husbandFullName = individual.name
+
+                if wifeId == individual.indi_id :
+                    wifeFullName = individual.name
+
+            familyRows.append ( [ fam.fam_id , fam.date_of_wedding.strftime (
+                GedcomParser.dateFormatter ) if fam.date_of_wedding else 'NA' , fam.divorced , husbandId ,
+                                  husbandFullName , wifeId , wifeFullName , [ child for child in fam.child_lst ] ] )
+        familyTable = self.print_in_table ( ClassForFam.columns , familyRows )
+
+        if pt :
+            print ( f'Summary of Individual :\n{individualTable}' )
+            print ( f'Summary of Family : \n{familyTable}' )
+
+        if write :
+            indi_header = "Summary of Individual:"
+            self.updated_file.append ( [ indi_header , individualTable ] )
+            fam_header = "Summary of Family:"
+            self.updated_file.append ( [ fam_header , familyTable ] )
+
+
+    # funtion to verify validity of tag
+    def verify_tag_validity ( self , index , splitInLine ) :
+
+        level = splitInLine [ 0 ]
+        if level in GedcomParser.dict_true.keys ( ) :
+            if splitInLine [ 1 ] in GedcomParser.dict_true [ level ] :
+                self.original_data.append ( (*splitInLine , index) )
+
+            else :
+                self.invalid_tags.append ( (*splitInLine , index) )
+
+        else :
+            self.invalid_tags.append ( (*splitInLine , index) )
+
+    @staticmethod
+    def verify_excp_tag_validity ( splitInLine ) :
+
+        for i in GedcomParser.exp_list :
+            if i in splitInLine:
+                if splitInLine.index ( i ) == 2 :
+                    splitInLine.insert ( 1 , i )
+                    splitInLine.pop ( )
+
+        return splitInLine
+
+
+
+    def process_info ( self ) :
+        #add process info method
+        pass
+    
+
+
+    # creating logger to log errors and anomalies in the program
+    def logger ( self , err_type , attr_type , usr_story , l_num , attr_id , err_str ) :
+
+        if err_type in ("ERROR" , "ANOMALY") :
+            if attr_type in ("FAMILY" , "INDIVIDUAL") :
+                self.logError.append ( f'{err_type}: {attr_type}: {usr_story}: {l_num}: {attr_id}: {err_str}' )
+
+
+    # Printing the data in Tabular Format
+    @staticmethod
+    def print_in_table ( fields , data_rows ) :
+
+        tbl = PrettyTable ( )
+        tbl.field_names = fields
+        if len ( data_rows ) != 0 :
+            for row in data_rows :
+                tbl.add_row ( row )
+
+            return tbl
+
+        return "Data Unavailable"
+
