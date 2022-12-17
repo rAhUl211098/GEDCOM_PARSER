@@ -375,7 +375,7 @@ class GedcomParser (  ClassForFam, ClassForInd ):
 def print_data(path=None):
     obj = GedcomParser(path = r'./data/test_data.ged',pt = False, write = True)
 
-    print(obj.updated_file)
+    #print(obj.updated_file)
     with open('Printing_Data.txt', 'w') as f:
          for i in obj.updated_file:
              for j in i:
