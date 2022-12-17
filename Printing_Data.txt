@@ -1,0 +1,76 @@
+Summary of Individual:
++-------+------------------+--------+------------+-----+-------+------------+-------+--------+
+|   ID  |       Name       | Gender |  Birthday  | Age | Alive |   Death    | Child | Spouse |
++-------+------------------+--------+------------+-----+-------+------------+-------+--------+
+|  @I1@ |  Captain /Dell/  |   M    | 1996-04-11 |  26 |  True |     NA     |  @F1@ |   NA   |
+|  @I2@ |    Tom /Dell/    |   M    | 1974-06-18 |  48 |  True |     NA     |   NA  |   NA   |
+|  @I3@ | Candice /Jones/  |   F    | 1974-06-22 |  48 |  True |     NA     |  @F2@ |  @F1@  |
+|  @I4@ |  Miller /Dell/   |   M    | 1952-07-14 |  70 |  True |     NA     |  @F4@ |  @F3@  |
+|  @I5@ |   Zoro /Dell/    |   M    | 2002-04-10 |  20 |  True |     NA     |  @F1@ |   NA   |
+|  @I6@ |  Jackie /Pitt/   |   F    | 1954-05-01 |  68 |  True |     NA     |  @F5@ |  @F3@  |
+|  @I7@ |  Roland /Pitt/   |   M    | 1922-02-10 |  48 | False | 1970-08-06 |   NA  |  @F5@  |
+|  @I8@ | Annabelle /Pitt/ |   F    | 1934-03-04 |  46 | False | 1980-06-10 |   NA  |  @F5@  |
+|  @I9@ |   Joe /Jones/    |   M    | 1948-09-10 |  74 |  True |     NA     |   NA  |  @F2@  |
+| @I10@ |  Hannah /Jones/  |   F    | 1950-05-05 |  72 |  True |     NA     |   NA  |  @F2@  |
+| @I11@ | Holland /Jones/  |   M    | 1976-10-04 |  46 |  True |     NA     |  @F2@ |  @F6@  |
+| @I12@ |   Remi /Jones/   |   F    | 1980-07-28 |  42 |  True |     NA     |   NA  |  @F6@  |
+| @I13@ |   Tony /Jones/   |   M    | 2006-07-14 |  16 |  True |     NA     |  @F6@ |   NA   |
+| @I14@ |  Roxy /Potter/   |   F    | 1978-12-10 |  44 |  True |     NA     |  @F2@ |  @F7@  |
+| @I15@ |  David /Potter/  |   M    | 1978-02-02 |  44 |  True |     NA     |   NA  |  @F7@  |
+| @I16@ |  Luffy /Potter/  |   M    | 2008-12-12 |  14 |  True |     NA     |  @F7@ |   NA   |
+| @I17@ |    Ben /Dell/    |   M    | 1940-09-05 |  61 | False | 2002-02-02 |   NA  |  @F4@  |
+| @I18@ |    Asa /Dell/    |   F    | 1945-03-04 |  60 | False | 2005-05-11 |   NA  |  @F4@  |
+| @I19@ |   Jack /Dell/    |   M    | 1950-11-20 |  72 |  True |     NA     |  @F4@ |  @F9@  |
+| @I20@ |   Mini /Dell/    |   F    | 1968-11-25 |  54 |  True |     NA     |   NA  |  @F8@  |
+| @I21@ | Angela /Goggins/ |   F    | 1964-07-05 |  58 |  True |     NA     |   NA  |  @F9@  |
+| @I22@ |   Elon /Dell/    |   M    | 1970-04-19 |  35 | False | 2006-02-04 |   NA  | @F10@  |
+| @I23@ |   Harry /Dell/   |   M    | 2000-09-09 |  22 |  True |     NA     | @F10@ |   NA   |
+| @I24@ |   Paula /Dell/   |   F    | 1970-06-17 |  52 |  True |     NA     |   NA  | @F10@  |
+| @I25@ |   Ruby /Dell/    |   F    | 1992-07-04 |  30 |  True |     NA     | @F10@ | @F11@  |
+| @I26@ |  Nik /Matthew/   |   M    | 1992-10-06 |  30 |  True |     NA     |   NA  | @F11@  |
+| @I27@ |   Luna /Dell/    |   F    | 1990-08-21 |  32 |  True |     NA     | @F10@ |   NA   |
+| @I28@ |   Rambo /Dell/   |   M    | 1988-07-10 |  34 |  True |     NA     |  @F8@ |   NA   |
+| @I29@ |   Pari /Dell/    |   F    | 1985-08-16 |  37 |  True |     NA     |  @F8@ |   NA   |
+| @I30@ |   Bella /Dell/   |   F    | 1960-05-08 |  62 |  True |     NA     |  @F4@ | @F13@  |
+| @I31@ | Manny /Hopkins/  |   M    | 1965-07-07 |  57 |  True |     NA     |   NA  | @F12@  |
+| @I32@ |  Peter /Hatter/  |   M    | 1955-11-03 |  46 | False | 2002-05-05 |   NA  | @F13@  |
+| @I33@ | Selena /Hatter/  |   F    | 1980-06-07 |  42 |  True |     NA     | @F13@ |   NA   |
+| @I34@ | Elena /Hopkins/  |   F    | 1989-08-06 |  33 |  True |     NA     | @F12@ |   NA   |
+| @I35@ |  Handy /Jones/   |   M    | 2000-01-01 |  22 |  True |     NA     |  @F6@ |   NA   |
+| @I36@ |   Ray /Jones/    |   M    | 2000-01-01 |  22 |  True |     NA     |  @F6@ |   NA   |
+| @I37@ |   Roy /Jones/    |   M    | 2000-01-01 |  22 |  True |     NA     |  @F6@ |   NA   |
+| @I38@ |  Maria /Jones/   |   F    | 2000-01-01 |  22 |  True |     NA     |  @F6@ |   NA   |
+| @I39@ |  Vibhi /Jones/   |   F    | 2000-01-01 |  22 |  True |     NA     |  @F6@ |   NA   |
+| @I40@ |   Anna /Jones/   |   F    | 2000-01-01 |  22 |  True |     NA     |  @F6@ |   NA   |
+| @I41@ |   Andy /Jones/   |   M    | 1990-02-06 |  32 |  True |     NA     |  @F6@ |   NA   |
+| @I42@ |   Sinn /Jones/   |   F    | 1990-02-06 |  32 |  True |     NA     |  @F6@ |   NA   |
+| @I43@ |   Sid /Jones/    |   M    | 1990-02-06 |  32 |  True |     NA     |  @F6@ |   NA   |
+| @I44@ |  Julie /Jones/   |   F    | 1990-02-06 |  32 |  True |     NA     |  @F6@ |   NA   |
+| @I45@ |   Tom /Jones/    |   M    | 1990-02-06 |  32 |  True |     NA     |  @F6@ |   NA   |
+| @I46@ |   Fork /Jones/   |   F    | 1997-04-05 |  25 |  True |     NA     |  @F6@ |   NA   |
+| @I47@ |   Amy /Jones/    |   F    | 1986-07-04 |  36 |  True |     NA     |  @F6@ |   NA   |
+| @I48@ |  Henna /Jones/   |   F    | 1995-05-06 |  27 |  True |     NA     |  @F6@ |   NA   |
+| @I49@ |   Emma /Jones/   |   F    | 1989-06-07 |  33 |  True |     NA     |  @F6@ |   NA   |
+| @I50@ |   Fanny /Dell/   |   M    | 1985-03-10 |  33 | False | 2018-03-09 |  @F3@ | @F14@  |
+| @I51@ |  Georgia /Dell/  |   F    | 1975-04-19 |  42 | False | 2018-03-09 |   NA  | @F14@  |
+| @I52@ |   Tony /Dell/    |   M    | 2010-06-06 |  12 |  True |     NA     | @F14@ |   NA   |
++-------+------------------+--------+------------+-----+-------+------------+-------+--------+
+Summary of Family:
++-------+---------+----------+------------+-----------------+---------+------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+|   ID  | Married | Divorced | Husband ID |   Husband Name  | Wife ID |    Wife Name     |                                                                     Children                                                                     |
++-------+---------+----------+------------+-----------------+---------+------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+|  @F1@ |    NA   |  False   |    @I4@    |  Miller /Dell/  |   @I3@  | Candice /Jones/  |                                                                 ['@I1@', '@I5@']                                                                 |
+|  @F2@ |    NA   |  False   |    @I9@    |   Joe /Jones/   |  @I10@  |  Hannah /Jones/  |                                                            ['@I3@', '@I11@', '@I14@']                                                            |
+|  @F3@ |    NA   |  False   |    @I4@    |  Miller /Dell/  |   @I6@  |  Jackie /Pitt/   |                                                                    ['@I50@']                                                                     |
+|  @F4@ |    NA   |  False   |   @I17@    |    Ben /Dell/   |  @I18@  |    Asa /Dell/    |                                                            ['@I4@', '@I19@', '@I30@']                                                            |
+|  @F5@ |    NA   |  False   |    @I7@    |  Roland /Pitt/  |   @I8@  | Annabelle /Pitt/ |                                                                     ['@I6@']                                                                     |
+|  @F6@ |    NA   |  False   |   @I11@    | Holland /Jones/ |  @I12@  |   Remi /Jones/   | ['@I13@', '@I35@', '@I36@', '@I37@', '@I38@', '@I39@', '@I40@', '@I41@', '@I42@', '@I43@', '@I44@', '@I45@', '@I46@', '@I47@', '@I48@', '@I49@'] |
+|  @F7@ |    NA   |  False   |   @I15@    |  David /Potter/ |  @I14@  |  Roxy /Potter/   |                                                                    ['@I16@']                                                                     |
+|  @F8@ |    NA   |  False   |   @I19@    |   Jack /Dell/   |  @I20@  |   Mini /Dell/    |                                                                ['@I28@', '@I29@']                                                                |
+|  @F9@ |    NA   |  False   |   @I19@    |   Jack /Dell/   |  @I21@  | Angela /Goggins/ |                                                                        []                                                                        |
+| @F10@ |    NA   |  False   |   @I22@    |   Elon /Dell/   |  @I24@  |   Paula /Dell/   |                                                           ['@I23@', '@I25@', '@I27@']                                                            |
+| @F11@ |    NA   |  False   |   @I26@    |  Nik /Matthew/  |  @I25@  |   Ruby /Dell/    |                                                                        []                                                                        |
+| @F12@ |    NA   |  False   |   @I31@    | Manny /Hopkins/ |  @I30@  |   Bella /Dell/   |                                                                    ['@I34@']                                                                     |
+| @F13@ |    NA   |  False   |   @I32@    |  Peter /Hatter/ |  @I30@  |   Bella /Dell/   |                                                                    ['@I33@']                                                                     |
+| @F14@ |    NA   |  False   |   @I50@    |   Fanny /Dell/  |  @I51@  |  Georgia /Dell/  |                                                                    ['@I52@']                                                                     |
++-------+---------+----------+------------+-----------------+---------+------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+

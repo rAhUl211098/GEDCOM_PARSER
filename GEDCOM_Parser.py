@@ -241,6 +241,8 @@ class GedcomParser (  ClassForFam, ClassForInd ):
             self.updated_file.append ( [ fam_header , familyTable ] )
 
 
+
+
     # funtion to verify validity of tag
     def verify_tag_validity ( self , index , splitInLine ) :
 
@@ -370,6 +372,14 @@ class GedcomParser (  ClassForFam, ClassForInd ):
 
         return "Data Unavailable"
 
-obj = GedcomParser(path = r'./data/test_data.ged',pt = True)
-temp = []
-obj.print_in_table(ClassForInd.columns,temp)
+def print_data(path=None):
+    obj = GedcomParser(path = r'./data/test_data.ged',pt = False, write = True)
+
+    print(obj.updated_file)
+    with open('Printing_Data.txt', 'w') as f:
+         for i in obj.updated_file:
+             for j in i:
+                 f.write(f'{str(j)}\n')
+
+if __name__ == '__main__':
+    print_data()
