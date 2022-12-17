@@ -270,6 +270,80 @@ class GedcomParser (  ClassForFam, ClassForInd ):
 
     def process_info ( self ) :
         #add process info method
+        iterator = iter ( self.original_data )
+
+        while True :
+            try :
+                line = next ( iterator )
+
+            except StopIteration :
+                break
+
+            else :
+                if line [ 0 ] == '0' and line [ 1 ] in ('HEAD' , 'TRLR' , 'NOTE') :
+                    self.loggerComment.append ( line )
+
+                while len ( line ) == 4 and line [ 0 ] == '0' and line [ 1 ] == "INDI" :
+
+                    indi = ClassForInd ( line [ 2 ] )
+                    indi.data.append ( line )
+                    self.individuals [ uuid.uuid4 ( ) ] = indi
+                    line = next ( iterator )
+
+                    while line [ 0 ] != '0' :
+                        indi.data.append ( line )
+                        if line [ 0 ] == '1' and line [ 1 ] in GedcomParser.individual_dictionary.keys ( ) :
+                            if line [ 1 ] in ('DEAT' , 'BIRT') :
+                                next_line = next ( iterator )
+                                indi.data.append ( next_line )
+                                try :
+
+                                    setattr ( indi , GedcomParser.individual_dictionary [ line [ 1 ] ] ,
+                                              datetime.datetime.strptime ( next_line [ 2 ] ,
+                                                                           '%d %b %Y' ) )  # set individual attribute
+                                except ValueError :
+                                    next_line [ 2 ].split ( )
+                                    setattr ( indi , GedcomParser.individual_dictionary [ line [ 1 ] ] ,
+                                              datetime.datetime ( 9999 , 1 , 1 ) )
+                                # print(indi)
+
+                            else :
+                                setattr ( indi , GedcomParser.individual_dictionary [ line [ 1 ] ] , line [ 2 ] )
+
+                        line = next ( iterator )
+
+                while len ( line ) == 4 and line [ 0 ] == '0' and line [ 1 ] == "FAM" :
+                    fam = ClassForFam ( line [ 2 ] )
+                    fam.element_list.append ( line )
+                    self.families [ uuid.uuid4 ( ) ] = fam
+                    line = next ( iterator )
+
+                    while line [ 0 ] != '0' :
+                        fam.element_list.append ( line )
+                        if line [ 0 ] == '1' and line [ 1 ] in GedcomParser.family_dictionary.keys ( ) :
+                            if line [ 1 ] in ('MARR' , 'DIV') :
+                                next_line = next ( iterator )
+                                fam.element_list.append ( next_line )
+                                try :
+                                    setattr ( fam , GedcomParser.family_dictionary [ line [ 1 ] ] ,
+                                              datetime.datetime.strptime ( next_line [ 2 ] , '%d %b %Y' ) )
+                                    # print(GedcomParser.family_dictionary [ line [ 1 ] ])
+                                    # print(datetime.datetime.strptime(next_line[2],'%d %b %Y'))
+                                    # print()
+
+                                except ValueError :
+                                    next_line [ 2 ].split ( )
+                                    setattr ( fam , GedcomParser.family_dictionary [ line [ 1 ] ] ,
+                                              datetime.datetime ( 9999 , 1 , 1 ) )
+                                # print ( fam )
+
+                            elif line [ 1 ] in ('HUSB' , 'WIFE') :
+                                setattr ( fam , GedcomParser.family_dictionary [ line [ 1 ] ] , line [ 2 ] )
+                            elif line [ 1 ] == 'CHIL' :
+                                fam.child_lst.append ( line [ 2 ] )
+
+                            line = next ( iterator )
+
         pass
     
 
@@ -296,3 +370,6 @@ class GedcomParser (  ClassForFam, ClassForInd ):
 
         return "Data Unavailable"
 
+obj = GedcomParser(path = r'./data/test_data.ged',pt = True)
+temp = []
+obj.print_in_table(ClassForInd.columns,temp)
