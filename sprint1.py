@@ -2,10 +2,10 @@ from User_stories import *
 
 def sprint_first ( filename = None ) :
     spr = GedcomParser ( path = r'./data/test_data.ged' , pt = True )
-    #us1_birth_less_than_6 ( spr)
-    #us2_less_than_15_siblings ( spr)
-    us4_next_dob (spr, pt = True )
-    us3_orphans_list (spr, pt = True )
+    us1_birth_less_than_6 ( spr)
+    us2_less_than_15_siblings ( spr)
+    us4_next_dob (spr, pt = True, write = True )
+    us3_orphans_list (spr, pt = True,write = True )
 
     for err in spr.logError :
         print ( err )
@@ -19,8 +19,8 @@ def sprint_first ( filename = None ) :
         else :
             with filePath :
                 filePath.write ( "Sprint 1 Results\n" )
-                #us1_birth_less_than_6 ( spr )
-                #us2_less_than_15_siblings ( spr )
+                us1_birth_less_than_6 ( spr )
+                us2_less_than_15_siblings ( spr )
                 us4_next_dob ( spr , pt = True )
                 us3_orphans_list ( spr , pt = True )
 
@@ -36,7 +36,7 @@ def sprint_first ( filename = None ) :
                 filePath.write ( "\n" )
 
 sprint_first ( )
-#sprint_first ( r'./sprint1/results.txt' )
+sprint_first ( r'./sprint1/results.txt' )
 
 
 

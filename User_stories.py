@@ -36,6 +36,7 @@ def us3_orphans_list ( obj , pt = False , debug = False , write = False ) :
         orphan_heading = "US3: Summary of Orphans:"
         obj.updated_file.append ( [ orphan_heading , orphan_tbl ] )
 
+
 # To find the people who have their birthdates in next 30 days
 def us4_next_dob ( obj , pt = False , debug = False , write = False ) :
 
@@ -63,6 +64,7 @@ def us4_next_dob ( obj , pt = False , debug = False , write = False ) :
     if write :
         birthday_header = "US4: Next Birthdays:"
         obj.updated_file.append ( [ birthday_header , dob_tbl ] )
+
         
 # To check less than 6 children are born at a single time
 def us1_birth_less_than_6 ( obj , debug = False ) :
