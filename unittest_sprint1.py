@@ -1,5 +1,6 @@
 import unittest
 from User_stories import *
+from GEDCOM_Parser import GedcomParser
 
 
 class Sprint1_Test(unittest.TestCase):
@@ -11,18 +12,24 @@ class Sprint1_Test(unittest.TestCase):
         self.assertTrue('@F6@',families)
         self.assertIn('@F6@', families)
         self.assertEqual(len(families), 1)
+        self.assertFalse('@F2@'==families)
+
 
     def test_us2_less_than_15_siblings(self):
         obj = GedcomParser(r'./data/test_data.ged', pt=False)
         families = us2_less_than_15_siblings(obj,debug=True)
         self.assertIn('@F6@', families)
         self.assertEqual(len(families), 1)
+        self.assertFalse ( '@F2@' == families )
+        self.assertTrue ( '@F6@' , families )
+
 
     def test_us3_orphans_list(self):
         obj = GedcomParser(r'./data/test_data.ged', pt=False)
         orphans = us3_orphans_list(obj,debug=True)
         self.assertTrue(len(orphans) == 1)
         self.assertFalse(len(orphans) == 0)
+
 
     def test_us4_next_dob( self ):
         obj = GedcomParser(r'./data/test_data.ged', pt=False)
