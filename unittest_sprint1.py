@@ -1,7 +1,17 @@
 import unittest
 from User_stories import *
 
+def us1_birth_less_than_6_test(self):
+    obj = GedcomParser(r'./data/test_data.ged', pt=False)
+    families = obj.us1_birth_less_than_6(debug=True)
+    self.assertIn('@F6@', families)
+    self.assertEqual(len(families), 1)
 
+def us2_less_than_15_siblings_test(self):
+    obj = GedcomParser(r'./data/test_data.ged', pt=False)
+    families = obj.us2_less_than_15_siblings(debug=True)
+    self.assertIn('@F6@', families)
+    self.assertEqual(len(families), 1)
 
 def us3_orphans_list_test(self):
     obj = GedcomParser(r'./data/test_data.ged', pt=False)
