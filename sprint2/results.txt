@@ -1,0 +1,60 @@
+Sprint 2 Results
+US6: Alive Single:
++-------+-----------------+--------+------------+-----+-------+-------+-------+--------+
+|   ID  |       Name      | Gender |  Birthday  | Age | Alive | Death | Child | Spouse |
++-------+-----------------+--------+------------+-----+-------+-------+-------+--------+
+|  @I1@ | Captain /Delta/ |   M    | 1996-04-11 |  26 |  True |   NA  |  @F1@ |   NA   |
+|  @I2@ |    Tom /Dell/   |   M    | 1974-06-18 |  48 |  True |   NA  |   NA  |   NA   |
+|  @I5@ |   Zoro /Dell/   |   M    | 2002-04-10 |  20 |  True |   NA  |  @F1@ |   NA   |
+| @I13@ |   Tony /Jones/  |   M    | 2006-07-14 |  16 |  True |   NA  |  @F6@ |   NA   |
+| @I16@ |  Luffy /Potter/ |   M    | 2008-12-12 |  14 |  True |   NA  |  @F6@ |   NA   |
+| @I23@ |   Harry /Dell/  |   M    | 2000-09-09 |  22 |  True |   NA  | @F10@ |   NA   |
+| @I27@ |   Luna /Dell/   |   F    | 1990-08-21 |  32 |  True |   NA  | @F10@ |   NA   |
+| @I28@ |   Rambo /Dell/  |   M    | 1988-07-10 |  34 |  True |   NA  |  @F8@ |   NA   |
+| @I29@ |   Pari /Dell/   |   F    | 1985-08-16 |  37 |  True |   NA  |  @F8@ |   NA   |
+| @I33@ | Selena /Hatter/ |   F    | 1980-06-07 |  42 |  True |   NA  | @F13@ |   NA   |
+| @I34@ | Elena /Hopkins/ |   F    | 1989-08-06 |  33 |  True |   NA  | @F12@ |   NA   |
+| @I35@ |  Handy /Jones/  |   M    | 2000-01-01 |  22 |  True |   NA  |  @F6@ |   NA   |
+| @I36@ |   Ray /Jones/   |   M    | 2000-01-01 |  22 |  True |   NA  |  @F6@ |   NA   |
+| @I38@ |   Roy /Jones/   |   M    | 2000-01-01 |  22 |  True |   NA  |  @F6@ |   NA   |
+| @I38@ |  Maria /Jones/  |   F    | 2000-01-01 |  22 |  True |   NA  |  @F6@ |   NA   |
+| @I39@ |  Vibhi /Jones/  |   F    | 2000-01-01 |  22 |  True |   NA  |  @F6@ |   NA   |
+| @I40@ |   Anna /Jones/  |   F    | 2000-01-01 |  22 |  True |   NA  |  @F6@ |   NA   |
+| @I41@ |   Andy /Jones/  |   M    | 1990-02-06 |  32 |  True |   NA  |  @F6@ |   NA   |
+| @I42@ |   Sinn /Jones/  |   F    | 1990-02-06 |  32 |  True |   NA  |  @F6@ |   NA   |
+| @I43@ |   Sid /Jones/   |   M    | 1990-02-06 |  32 |  True |   NA  |  @F6@ |   NA   |
+| @I44@ |  Julie /Jones/  |   F    | 1990-02-06 |  32 |  True |   NA  |  @F6@ |   NA   |
+| @I45@ |   Tom /Jones/   |   M    | 1990-02-06 |  32 |  True |   NA  |  @F6@ |   NA   |
+| @I46@ |   Fork /Jones/  |   F    | 1997-04-05 |  25 |  True |   NA  |  @F6@ |   NA   |
+| @I47@ |   Amy /Jones/   |   F    | 1986-07-04 |  36 |  True |   NA  |  @F6@ |   NA   |
+| @I48@ |  Henna /Jones/  |   F    | 1995-05-06 |  27 |  True |   NA  |  @F6@ |   NA   |
+| @I49@ |   Emma /Jones/  |   F    | 1989-06-07 |  33 |  True |   NA  |  @F6@ |   NA   |
+| @I52@ |   Tony /Dell/   |   M    | 2010-06-06 |  12 |  True |   NA  | @F14@ |   NA   |
++-------+-----------------+--------+------------+-----+-------+-------+-------+--------+
+US5: Alive Married:
++-------+------------------+--------+------------+-----+-------+-------+-------+--------+
+|   ID  |       Name       | Gender |  Birthday  | Age | Alive | Death | Child | Spouse |
++-------+------------------+--------+------------+-----+-------+-------+-------+--------+
+|  @I3@ | Candice /Jones/  |   F    | 1974-06-22 |  48 |  True |   NA  |  @F2@ |  @F1@  |
+|  @I4@ |  Miller /Dell/   |   M    | 1952-07-14 |  70 |  True |   NA  |  @F4@ |  @F3@  |
+|  @I6@ |  Jackie /Pitt/   |   F    | 1954-05-01 |  68 |  True |   NA  |  @F5@ |  @F3@  |
+|  @I9@ |   Joe /Jones/    |   M    | 1948-09-10 |  74 |  True |   NA  |   NA  |  @F2@  |
+| @I10@ |  Hannah /Jones/  |   F    | 1950-05-05 |  72 |  True |   NA  |   NA  |  @F2@  |
+| @I11@ | Holland /Jones/  |   M    | 1976-10-04 |  46 |  True |   NA  |  @F2@ |  @F6@  |
+| @I12@ |   Remi /Jones/   |   F    | 1980-07-28 |  42 |  True |   NA  |   NA  |  @F6@  |
+| @I14@ |  Roxy /Potter/   |   F    | 1978-12-10 |  44 |  True |   NA  |  @F2@ |  @F6@  |
+| @I15@ |  David /Potter/  |   M    | 1978-02-02 |  44 |  True |   NA  |   NA  |  @F6@  |
+| @I19@ |   Jack /Dell/    |   M    | 1950-11-20 |  72 |  True |   NA  |  @F4@ |  @F9@  |
+| @I20@ |   Mini /Dell/    |   F    | 1968-11-25 |  54 |  True |   NA  |   NA  |  @F8@  |
+| @I21@ | Angela /Goggins/ |   F    | 1964-07-05 |  58 |  True |   NA  |   NA  |  @F9@  |
+| @I24@ |   Paula /Dell/   |   F    | 1970-06-17 |  52 |  True |   NA  |   NA  | @F10@  |
+| @I25@ |   Ruby /Dell/    |   F    | 1992-07-04 |  30 |  True |   NA  | @F10@ | @F11@  |
+| @I26@ |  Nik /Matthew/   |   M    | 1992-10-06 |  30 |  True |   NA  |   NA  | @F11@  |
+| @I30@ |   Bella /Dell/   |   F    | 1960-05-08 |  62 |  True |   NA  |  @F4@ | @F13@  |
+| @I31@ | Manny /Hopkins/  |   M    | 1965-07-07 |  57 |  True |   NA  |   NA  | @F12@  |
++-------+------------------+--------+------------+-----+-------+-------+-------+--------+
+Sprint 2 Error Log
+ERROR: FAMILY: US16: 511: @F1@: Children with id @I1@ do not have the same family name
+ERROR: INDIVIDUAL: US7: 368: @I38@: @I38@ already present.
+ERROR: FAMILY: US7: 564: @F6@: @F6@ already present.
+

@@ -90,10 +90,7 @@ class ClassForInd :
 
         return [ self.indi_id , self.name , self.sex , self.dob.strftime ( "%Y-%m-%d" ) , self.age , self.alive ,
                  self.death_date.strftime ( "%Y-%m-%d" ) if self.death_date else 'NA' , self.fam_c , self.fam_s ]
-    def __str__ ( self ) :
 
-        #print(self.name ,self.sex , self.birth_date , self.death_date , self.indi_id)
-        return ""
 
 # Class to handle family data
 class ClassForFam :
@@ -149,10 +146,6 @@ class ClassForFam :
             divorced = True
         return divorced
 
-    def __str__ ( self ) :
-
-        #print(self.date_of_wedding ,self.date_of_divorce , self.wife , self.husband , self.fam_id)
-        return ""
 
 # Parser to process GEDCOM data
 class GedcomParser (  ClassForFam, ClassForInd ):

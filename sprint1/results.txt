@@ -20,3 +20,18 @@ ERROR: FAMILY: US2: 546: @F6@: Fam has 16 childs
 ERROR: FAMILY: US1: 546: @F6@: 6 childs born on the same date
 ERROR: FAMILY: US2: 546: @F6@: Fam has 16 childs
 
+Sprint 1 Results
+US4: Next Birthdays:
+Data Unavailable
+US3: Summary of Orphans:
++-------+-------------+--------+------------+-----+-------+-------+-------+--------+
+|   ID  |     Name    | Gender |  Birthday  | Age | Alive | Death | Child | Spouse |
++-------+-------------+--------+------------+-----+-------+-------+-------+--------+
+| @I52@ | Tony /Dell/ |   M    | 2010-06-06 |  12 |  True |   NA  | @F14@ |   NA   |
++-------+-------------+--------+------------+-----+-------+-------+-------+--------+
+Sprint 1 Error Log
+ERROR: FAMILY: US1: 546: @F6@: 6 childs born on the same date
+ERROR: FAMILY: US2: 546: @F6@: Fam has 16 childs
+ERROR: FAMILY: US1: 546: @F6@: 6 childs born on the same date
+ERROR: FAMILY: US2: 546: @F6@: Fam has 16 childs
+

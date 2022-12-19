@@ -36,7 +36,7 @@ def sprint_first ( filename = None ) :
                 filePath.write ( "\n" )
 
 sprint_first ( )
-sprint_first ( r'./sprint1/results.txt' )
+#sprint_first ( r'./sprint1/results.txt' )
 
 
 

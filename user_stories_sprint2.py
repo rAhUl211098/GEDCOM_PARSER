@@ -13,9 +13,11 @@ def us7_uid ( obj , debug = False ) :
             obj.logger ( "ERROR" , "INDIVIDUAL" , "US7" , ind.l_num [ "INDI" ] , ind.indi_id ,
                           f"{ind.indi_id} already present." )
             dup_uids.append ( ind.indi_id )
+
         else :
             ind_uids.append ( ind.indi_id )
             uids.append ( ind.indi_id )
+
     for fam in obj.families.values ( ) :
         if fam.fam_id in fam_uids :
             obj.logger ( "ERROR" , "FAMILY" , "US7" , fam.l_num [ "FAM" ] , fam.fam_id ,
@@ -24,6 +26,7 @@ def us7_uid ( obj , debug = False ) :
         else :
             fam_uids.append ( fam.fam_id )
             uids.append ( ind.indi_id )
+
 
     if debug :
         return uids , dup_uids
@@ -97,4 +100,5 @@ def us5_married_alive ( obj , pt = False , debug = False , write = False ) :
 
     if write :
         header = "US5: Alive Married:"
-        obj.updated_file.append ( [ header , alive_married_tbl ] )        
+        obj.updated_file.append ( [ header , alive_married_tbl ] )
+
