@@ -56,3 +56,45 @@ def us8_same_family_name ( obj , debug = False ) :
 
     if debug :
         return err
+    
+# To check the single people alive
+def us6_singles_alive ( obj , pt = False , debug = False , write = False ) :
+
+    alive_single = [ ]
+    for ind in obj.individuals.values ( ) :
+        if not ind.death_date :
+            if ind.fam_s == 'NA' :
+                alive_single.append ( ind.ptbl_row ( ) )
+
+    alive_single_tbl = obj.print_in_table ( ClassForInd.columns , alive_single )
+
+    if pt :
+        print ( f'Alive Single: \n{alive_single_tbl}' )
+
+    if debug :
+        return alive_single
+
+    if write :
+        header = "US6: Alive Single:"
+        obj.updated_file.append ( [ header , alive_single_tbl ] )   
+        
+# To check the if married people are alive or not
+def us5_married_alive ( obj , pt = False , debug = False , write = False ) :
+
+    alive_married = [ ]
+    for ind in obj.individuals.values ( ) :
+        if not ind.death_date :
+            if ind.fam_s != 'NA' :
+                alive_married.append ( ind.ptbl_row ( ) )
+
+    alive_married_tbl = obj.print_in_table ( ClassForInd.columns , alive_married )
+
+    if pt :
+        print ( f'Living Married: \n{alive_married_tbl}' )
+
+    if debug :
+        return alive_married
+
+    if write :
+        header = "US5: Alive Married:"
+        obj.updated_file.append ( [ header , alive_married_tbl ] )        
