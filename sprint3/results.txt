@@ -1,0 +1,78 @@
+Sprint 3 Results
+Sprint 3 Error Log
+ANOMALY: FAMILY: US10: 398: @F7@: Child with id @I16@ born 2022-12-01 after father's death later than 9 months. Father's death date: 2008-01-11
+ANOMALY: FAMILY: US10: 414: @F10@: Child with id @I23@ born 2000-09-09 after mother's death on date: 1991-07-06
+ANOMALY: FAMILY: US10: 414: @F10@: Child with id @I25@ born 1992-07-04 after mother's death on date: 1991-07-06
+
+Sprint 3 Results
+US11: Birth in last month:
++-------+----------------+--------+------------+-----+-------+-------+-------+--------+
+|   ID  |      Name      | Gender |  Birthday  | Age | Alive | Death | Child | Spouse |
++-------+----------------+--------+------------+-----+-------+-------+-------+--------+
+| @I16@ | Luffy /Potter/ |   M    | 2022-12-01 |  0  |  True |   NA  |  @F7@ |   NA   |
++-------+----------------+--------+------------+-----+-------+-------+-------+--------+
+US12:Died Recently :
++-------+------------+--------+------------+-----+-------+------------+-------+--------+
+|   ID  |    Name    | Gender |  Birthday  | Age | Alive |   Death    | Child | Spouse |
++-------+------------+--------+------------+-----+-------+------------+-------+--------+
+| @I17@ | Ben /Dell/ |   M    | 1940-09-05 |  82 | False | 2022-11-20 |   NA  |  @F4@  |
++-------+------------+--------+------------+-----+-------+------------+-------+--------+
+Sprint 3 Error Log
+ANOMALY: FAMILY: US10: 398: @F7@: Child with id @I16@ born 2022-12-01 after father's death later than 9 months. Father's death date: 2008-01-11
+ANOMALY: FAMILY: US10: 414: @F10@: Child with id @I23@ born 2000-09-09 after mother's death on date: 1991-07-06
+ANOMALY: FAMILY: US10: 414: @F10@: Child with id @I25@ born 1992-07-04 after mother's death on date: 1991-07-06
+
+Sprint 3 Results
+US11: Birth in last month:
++-------+----------------+--------+------------+-----+-------+-------+-------+--------+
+|   ID  |      Name      | Gender |  Birthday  | Age | Alive | Death | Child | Spouse |
++-------+----------------+--------+------------+-----+-------+-------+-------+--------+
+| @I16@ | Luffy /Potter/ |   M    | 2022-12-01 |  0  |  True |   NA  |  @F7@ |   NA   |
++-------+----------------+--------+------------+-----+-------+-------+-------+--------+
+US12:Died Recently :
++-------+------------+--------+------------+-----+-------+------------+-------+--------+
+|   ID  |    Name    | Gender |  Birthday  | Age | Alive |   Death    | Child | Spouse |
++-------+------------+--------+------------+-----+-------+------------+-------+--------+
+| @I17@ | Ben /Dell/ |   M    | 1940-09-05 |  82 | False | 2022-11-20 |   NA  |  @F4@  |
++-------+------------+--------+------------+-----+-------+------------+-------+--------+
+Sprint 3 Error Log
+ANOMALY: FAMILY: US10: 398: @F7@: Child with id @I16@ born 2022-12-01 after father's death later than 9 months. Father's death date: 2008-01-11
+ANOMALY: FAMILY: US10: 414: @F10@: Child with id @I23@ born 2000-09-09 after mother's death on date: 1991-07-06
+ANOMALY: FAMILY: US10: 414: @F10@: Child with id @I25@ born 1992-07-04 after mother's death on date: 1991-07-06
+
+Sprint 3 Results
+US11: Birth in last month:
++-------+----------------+--------+------------+-----+-------+-------+-------+--------+
+|   ID  |      Name      | Gender |  Birthday  | Age | Alive | Death | Child | Spouse |
++-------+----------------+--------+------------+-----+-------+-------+-------+--------+
+| @I16@ | Luffy /Potter/ |   M    | 2022-12-01 |  0  |  True |   NA  |  @F7@ |   NA   |
++-------+----------------+--------+------------+-----+-------+-------+-------+--------+
+US12:Died Recently :
++-------+------------+--------+------------+-----+-------+------------+-------+--------+
+|   ID  |    Name    | Gender |  Birthday  | Age | Alive |   Death    | Child | Spouse |
++-------+------------+--------+------------+-----+-------+------------+-------+--------+
+| @I17@ | Ben /Dell/ |   M    | 1940-09-05 |  82 | False | 2022-11-20 |   NA  |  @F4@  |
++-------+------------+--------+------------+-----+-------+------------+-------+--------+
+Sprint 3 Error Log
+ANOMALY: FAMILY: US10: 398: @F7@: Child with id @I16@ born 2022-12-01 after father's death later than 9 months. Father's death date: 2008-01-11
+ANOMALY: FAMILY: US10: 414: @F10@: Child with id @I23@ born 2000-09-09 after mother's death on date: 1991-07-06
+ANOMALY: FAMILY: US10: 414: @F10@: Child with id @I25@ born 1992-07-04 after mother's death on date: 1991-07-06
+
+Sprint 3 Results
+US11: Birth in last month:
++-------+----------------+--------+------------+-----+-------+-------+-------+--------+
+|   ID  |      Name      | Gender |  Birthday  | Age | Alive | Death | Child | Spouse |
++-------+----------------+--------+------------+-----+-------+-------+-------+--------+
+| @I16@ | Luffy /Potter/ |   M    | 2022-12-01 |  0  |  True |   NA  |  @F7@ |   NA   |
++-------+----------------+--------+------------+-----+-------+-------+-------+--------+
+US12:Died Recently :
++-------+------------+--------+------------+-----+-------+------------+-------+--------+
+|   ID  |    Name    | Gender |  Birthday  | Age | Alive |   Death    | Child | Spouse |
++-------+------------+--------+------------+-----+-------+------------+-------+--------+
+| @I17@ | Ben /Dell/ |   M    | 1940-09-05 |  82 | False | 2022-11-20 |   NA  |  @F4@  |
++-------+------------+--------+------------+-----+-------+------------+-------+--------+
+Sprint 3 Error Log
+ANOMALY: FAMILY: US10: 398: @F7@: Child with id @I16@ born 2022-12-01 after father's death later than 9 months. Father's death date: 2008-01-11
+ANOMALY: FAMILY: US10: 414: @F10@: Child with id @I23@ born 2000-09-09 after mother's death on date: 1991-07-06
+ANOMALY: FAMILY: US10: 414: @F10@: Child with id @I25@ born 1992-07-04 after mother's death on date: 1991-07-06
+

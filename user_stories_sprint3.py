@@ -24,6 +24,8 @@ def us11_births_in_last_month ( obj , pt = False , debug = False , write = False
         head = "US11: Birth in last month:"
         obj.updated_file.append ( [ head , table_of_births_in_lastmonth ] )
 
+
+
 #To check the people who died in last 30 days
 def us12_deaths_in_last_month ( obj , pt = False , debug = False , write = False ) :
 
@@ -47,6 +49,7 @@ def us12_deaths_in_last_month ( obj , pt = False , debug = False , write = False
     if write :
         head = "US12:Died Recently :"
         obj.updated_file.append ( [ head , table_of_deaths_in_lastmonth ] )
+
         
 #To check if children are born before or after marriage of their parents
 def us9_children_pre_marriage ( obj , debug = False ) :
