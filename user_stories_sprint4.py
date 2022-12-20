@@ -70,6 +70,8 @@ def us14_check_married_to_child ( obj , pt = False , debug = False ) :
 
     if debug :
         return discrepancy
+
+
 # To check the genders assigned to husbands and wives
 def us13_check_gender_of_spouse ( obj , pt = False , debug = False ) :
     discrepancy = [ ]
